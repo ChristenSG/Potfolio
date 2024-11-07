@@ -1,0 +1,878 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+// Variables-------------------------------------------
+$header-bg-color: linear-gradient(to bottom, #000, transparent);
+$page-bgcolor: #000;
+$text-color: #fff;
+$text-hover-color: #F3C623;
+$cards-bg-color: #FAF8F1;
+$hr-color: #FAF8F1;
+$title-hover: #FFF3E2;
+$dance-font: "Dancing Script", cursive;
+$icon-anim: 10s rotate-anim infinite;
+// ----------------------------------------------------
+
+// General CSS-----------------------------------------
+body{
+	background: $page-bgcolor;
+	font-family: "Raleway", sans-serif;
+	overflow-x: hidden;
+	color: $text-color;
+}
+
+section{
+	padding: 130px 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: $text-color;
+}
+
+button{
+	background-color: #FFB0B0;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+	height: 300px;
+}
+// ----------------------------------------------------
+
+// Header----------------------------------------------
+header{
+	background: $header-bg-color;
+	transition: background 0.3s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	h4{
+		font-family: $dance-font;
+	}
+
+	.header-parent{
+		height: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.menu{
+		a:hover{
+			color: $text-hover-color;
+			border-bottom: 1px solid $text-hover-color;
+		}
+	}
+
+	.burger-btn{
+		display: none;
+
+		button{
+			background-color: #000;
+			font-size: 25px;
+			color: #fff;
+		}
+	}
+
+	.burger-menu{
+		.burger-close-btn{
+			background-color: #B8001F;
+			top: 10px;
+			right: 10px;
+			color: #fff;
+			font-size: 20px
+		}
+
+		width: 100vw;
+		height: 100vh;
+		display: none;
+		padding: 20px;
+		padding-top: 70px;
+		background-color: #000;
+		opacity: 99%;
+		text-align: left;
+		z-index: 100;
+		top: 0px;
+		right: 0px;
+
+		hr{
+			color: #fff;
+		}
+	}
+}
+// ----------------------------------------------------
+
+// Projects Main Section-------------------------------
+.projects-main-sec{
+	padding-top: 170px;
+	font-family: "Roboto Slab", serif;
+	// background-image: url(https://www.knottytie.com/cdn/shop/t/54/assets/onboarding-large.png?v=36638386263462677341694104388);
+	// background-image: url(https://static.vecteezy.com/system/resources/previews/013/087/516/non_2x/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg);
+	// background-image: url(images/page2-mainsec-bg.jpg);
+	// background-image: url(https://i.pinimg.com/originals/72/da/8e/72da8e918336efe1313e62f05f090e08.jpg);
+	background-image: url(../images/bg-banner.png);
+	background-position: center;
+	background-size: cover;
+	// border-bottom: 2px solid #333;
+
+	.name-container{
+		margin: 0 50px;
+		color: $title-hover;
+
+		h1, h2{
+			font-size: 130px;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+	}
+
+	.tools-container{
+		max-width: 1100px;
+		background-color: rgba(0, 0, 0, 50%);
+		background-blend-mode: overlay;
+		border: 1px solid $title-hover;
+
+		.slide{
+			background-position: center;
+			background-size: cover;
+			height: 100px;
+			max-width: 100px;
+		}
+
+		.figma-slide{
+			background-image: url("../images/techicons/figma.png");
+		}
+
+
+		.canva-slide{
+			background-image: url("../images/techicons/canva.jpg");
+		}
+
+		.html-slide{
+			background-image: url("../images/techicons/html.png");
+		}
+
+		.css-slide{
+			background-image: url("../images/techicons/css.png");
+		}
+
+		.bootstrap-slide{
+			background-image: url("../images/techicons/bootstrap.jpg");
+		}
+
+		.sass-slide{
+			background-image: url("../images/techicons/sass.png");
+		}
+
+		.js-slide{
+			background-image: url("../images/techicons/js.png");
+		}
+
+		.wp-slide{
+			border-radius: 15px;
+			background-image: url("../images/techicons/wordpress.jpg");
+		}
+
+		.php-slide{
+			background-image: url("../images/techicons/php.png");
+		}
+
+		.golang-slide{
+			background-image: url("../images/techicons/go.png");
+		}
+
+		.photoshop-slide{
+			background-image: url("../images/techicons/photoshop.png");
+		}
+
+		.ai-slide{
+			background-image: url("../images/techicons/ai.png");
+		}
+
+		.pr-slide{
+			background-image: url("../images/techicons/pr.png");
+		}
+
+		.an-slide{
+			background-image: url("../images/techicons/an.png");
+		}
+
+		.github-slide{
+			background-color: #fff;
+			background-image: url("../images/techicons/github.png");
+		}
+
+		.trello-slide{
+			height: 80px;
+			max-width: 200px;
+			background-image: url("../images/techicons/trello.jpg");
+		}
+
+		.sqlite-slide{
+			height: 80px;
+			max-width: 200px;
+			background-color: #fff;
+			border-radius: 50px;
+			background-image: url("../images/techicons/sqlite.png");
+		}
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+	background-color: #0B192C;
+	// background-image: url(https://www.pngkit.com/png/full/139-1397585_background-title-png-title-background-design-png.png);
+	// background-position: center;
+	// background-size: cover;
+	transition: 0.5s;
+
+	.title{
+		transition: 0.5s;
+
+		h2{
+			font-size: 150px;
+		}
+
+		// &:hover{
+		// 	color: #000;
+		// 	cursor: pointer;
+
+		// 	.big-o{
+		// 		background-color: #000;
+		// 	}
+		// }
+
+		.big-o{
+			background-color: #fff;
+			border-radius: 100px;
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+
+// .title-container:hover{
+// 	background-color: #FFF3E2;
+// 	color: #0B192C;
+// 	box-shadow: 2px 2px 2px #fff;
+// 	cursor: pointer;
+
+// 	.big-o{
+// 		background-color: #0B192C;
+// 	}
+// }
+
+// Projects Section------------------------------------
+.projects-sec{
+	padding: 200px 0;
+	font-family: "Bebas Neue", sans-serif;
+	
+	.all-projects{
+		padding-top: 150px;
+		// display: none;
+
+		i{
+			color: #fff;
+			font-size: 30px;
+
+			&:hover{
+				color: #243642;
+			}
+		}
+
+		.box{
+			background-color: #1E3E62;
+			height: 50px;
+			width: 100%;
+
+			.eye-close{
+				display: none;
+			}
+		}
+
+		.up-box{
+			cursor: pointer;
+
+			&:hover{
+				color: #243642;
+				background-color: #F3C623;
+			}
+		}
+
+		.down-box{
+			height: 15px;
+			top: 100%;
+			animation-timing-function: ease;
+		}
+
+		.project{
+			margin-bottom: 50px;
+
+			ul{
+				list-style: none;
+				font-size: 30px;
+				font-weight: 600;
+
+				img{
+					max-width: 60px;
+					height: 60px;
+					transition: 0.5s;
+					cursor: zoom-in;
+
+					&:hover{
+						transform: scale(2);
+					}
+				}
+			}
+
+			.project-btn{
+				top: 38%;
+				left: 42%;
+				z-index: 1;
+			}
+
+			.project-content{
+				color: #000;
+				display: none;
+				background-color: #fff;
+
+				.content-img{
+					display: none;
+				}
+				.content-text{
+					display: none;
+				}
+			}
+		}
+
+		.project-popup{
+			height: 100vh;
+			width: 100vw;
+			background-color: #0B192C;
+			top: 0;
+			left: 0;
+			z-index: 100;
+			display: none;
+
+			img{
+				// margin-left: auto;
+				// margin-right: auto;
+				height: auto;
+				max-width: auto;
+			}
+
+			.popup-content{
+				margin-left: auto;
+				margin-right: auto;
+				.project-name{
+					max-width: 100%;
+					background-color: #1E3E62;
+				}
+
+				padding: 50px;
+				width: 60%;
+				height: 80%;
+				overflow-y: scroll;
+				top: 50%;
+				left: 50%;
+				background-color: #fff;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------
+
+// Footer----------------------------------------------
+footer{
+	padding-bottom: 80px;
+	// background-image: url(https://wallpapers.com/images/hd/dark-gradient-background-ej849je2nw8eafj6.jpg);
+	background: url(https://i.pinimg.com/originals/7f/e7/74/7fe774bbacce09f00cb5b2e3cbc48db3.png);
+	background-color: rgba(0, 0, 0, 70%);
+	background-blend-mode: overlay;
+	background-position: center;
+	background-size: cover;
+
+	.container{
+		max-width: 1300px;
+	}
+
+	.footer-parent{
+		padding-top: 50px;
+		border-top: 2px solid #FFF;
+		border-radius: 50px;
+	}
+
+	.contact{
+		a:hover{
+			color: $text-hover-color;
+			border-bottom: 1px solid $text-hover-color;
+		}
+
+		ul{
+			a:hover{
+				border: 0;
+			}
+
+			i{
+				font-size: 35px;
+				color: #fff;
+			}
+
+			i:hover{
+				color: $text-hover-color;
+			}
+		}
+	}
+
+	h5{
+		font-size: 50px;
+		font-family: $dance-font;
+		color: $text-hover-color;
+	}
+
+	h6{
+		margin-left: 30px;
+		color: $text-hover-color;
+	}
+
+	img{
+		height: 50px;
+	}
+
+	ul{
+		list-style: none;
+
+		a:hover{
+			color: $text-hover-color;
+			border-bottom: 1px solid $text-hover-color;
+		}
+
+		li{
+			margin: 20px 0;
+		}
+	}
+
+	.copyright{
+		padding-top: 80px;
+		h6{
+			color: #fff;
+		}
+	}
+}
+// ----------------------------------------------------
+
+// Responsive------------------------------------------
+@media only screen and (max-width: 1250px){
+section{
+	padding: 100px 0;
+}
+// Projects Main Section-------------------------------
+.projects-main-sec{
+
+	.name-container{
+		h1, h2{
+			font-size: 100px;
+		}
+	}
+
+	.tools-container{
+		max-width: 900px;
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+
+	.title{
+		h2{
+			font-size: 140px;
+		}
+	}
+}
+
+// Projects Section------------------------------------
+.projects-sec{
+
+	.all-projects{
+		padding-top: 130px;
+
+		i{
+			font-size: 28px;
+		}
+
+		.project{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+// ----------------------------------------------------
+}
+
+@media only screen and (max-width: 992px){
+// Header----------------------------------------------
+header{
+	.header-parent{
+		height: 60px;
+	}
+}
+// ----------------------------------------------------
+
+// Projects Main Section-------------------------------
+.projects-main-sec{
+
+	.name-container{
+		h1, h2{
+			font-size: 75px;
+			font-weight: 700;
+		}
+	}
+
+	.tools-container{
+		max-width: 700px;
+
+		.slide{
+			height: 75px;
+			max-width: 75px;
+		}
+
+		.trello-slide{
+			height: 60px;
+			max-width: 120px;
+		}
+
+		.sqlite-slide{
+			height: 60px;
+			max-width: 120px;
+		}
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+
+	.title{
+
+		h2{
+			font-size: 110px;
+		}
+
+		.big-o{
+			border-radius: 80px;
+			max-width: 80px;
+			height: 80px;
+		}
+	}
+}
+
+// Projects Section------------------------------------
+.projects-sec{
+	padding-top: 170px;
+	
+	.all-projects{
+		i{
+			color: #fff;
+			font-size: 25px;
+		}
+
+		h3{
+			font-size: 20px;
+		}
+
+		.project{
+			margin-bottom: 50px;
+
+			.project-content{
+				.content-img img{
+					height: 250px;
+				}
+			}
+
+			ul{
+				img{
+					max-width: 40px;
+					height: 40px;
+
+					&:hover{
+						transform: scale(2);
+					}
+				}
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------
+
+// Footer----------------------------------------------
+footer{
+	padding-bottom: 80px;
+
+	h5{
+		font-size: 40px;
+	}
+}
+// ----------------------------------------------------
+}
+
+@media only screen and (max-width: 768px){
+// General CSS-----------------------------------------
+section{
+	padding: 50px 0;
+}
+// ----------------------------------------------------
+
+// Projects Main Section-------------------------------
+.projects-main-sec{
+
+	.name-container{
+		h1, h2{
+			font-size: 50px;
+		}
+	}
+
+	.tools-container{
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		max-width: 100%;
+
+		.slide{
+			height: 40px;
+			max-width: 40px;
+		}
+
+		.trello-slide{
+			height: 40px;
+			max-width: 90px;
+		}
+
+		.sqlite-slide{
+			height: 40px;
+			max-width: 90px;
+		}
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+
+	.title{
+
+		h2{
+			font-size: 90px;
+		}
+
+		.big-o{
+			border-radius: 60px;
+			max-width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+// Projects Section------------------------------------
+.projects-sec{
+	padding-top: 140px;
+	
+	.all-projects{
+		padding-top: 90px;
+
+		i{
+			font-size: 20px;
+		}
+
+		.project{
+			margin-bottom: 50px;
+
+			.project-content{
+				flex-direction: column;
+				width: 100%;
+
+				.content-img img{
+					height: 200px;
+					max-width: 100%;
+				}
+			}
+
+			.content-text{
+				width: 100%;
+				ul{
+					
+					img{
+						max-width: 50px;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------
+
+// Footer----------------------------------------------
+footer{
+
+	h5{
+		font-size: 35px;
+	}
+}
+// ----------------------------------------------------
+}
+
+@media only screen and (max-width: 576px){
+// Header----------------------------------------------
+header{
+
+	.header-parent{
+
+		.menu{
+			display: none;
+		}
+
+		.burger-btn{
+			display: block;
+		}
+	}	
+}
+// ----------------------------------------------------
+// Projects Main Section-------------------------------
+.projects-main-sec{
+
+	.name-container{
+		h1, h2{
+			font-size: 40px;
+		}
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+
+	.title{
+
+		h2{
+			font-size: 70px;
+		}
+
+		.big-o{
+			border-radius: 50px;
+			max-width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+// Projects Section------------------------------------
+.projects-sec{
+	padding-top: 120px;
+	
+	.all-projects{
+		padding-top: 70px;
+
+		.project{
+			margin-bottom: 40px;
+
+			.project-content{
+
+				.content-img img{
+					height: 150px;
+				}
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------
+
+// Footer----------------------------------------------
+footer{
+	padding-bottom: 80px;
+
+	.footer-parent{
+		gap: 10px;
+		.contact{
+			width: 100%
+		}
+		.map{
+			width: 100%;
+		}
+		.email{
+			width: 100%;
+
+			button{
+				margin: 0;
+			}
+		}
+	}
+}
+// ----------------------------------------------------
+}
+
+@media only screen and (max-width: 480px){
+// General CSS-----------------------------------------
+section{
+	padding: 30px 0;
+}
+// ----------------------------------------------------
+// Projects Main Section-------------------------------
+.projects-main-sec{
+
+	.name-container{
+		h1, h2{
+			font-size: 28px;
+		}
+	}
+}
+// ----------------------------------------------------
+
+.title-container{
+
+	.title{
+
+		h2{
+			font-size: 60px;
+		}
+
+		.big-o{
+			border-radius: 40px;
+			max-width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+// Projects Section------------------------------------
+.projects-sec{
+	padding-top: 100px;
+	
+	.all-projects{
+		padding-top: 60px;
+	}
+}
+
+// ----------------------------------------------------
+}
+// ----------------------------------------------------

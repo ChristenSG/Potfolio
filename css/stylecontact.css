@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background: #000;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+section {
+  padding: 130px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  background-color: #FFB0B0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 300px;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
+  background: linear-gradient(to bottom, #000, transparent);
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header h4 {
+  font-family: "Dancing Script", cursive;
+}
+header .header-parent {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .menu a:hover {
+  color: #F3C623;
+  border-bottom: 1px solid #F3C623;
+}
+header .burger-btn {
+  display: none;
+}
+header .burger-btn button {
+  background-color: #000;
+  font-size: 25px;
+  color: #fff;
+}
+header .burger-menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  padding: 20px;
+  padding-top: 70px;
+  background-color: #000;
+  opacity: 99%;
+  text-align: left;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+}
+header .burger-menu .burger-close-btn {
+  background-color: #B8001F;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+header .burger-menu hr {
+  color: #fff;
+}
+
+.projects-main-sec {
+  padding-top: 170px;
+  font-family: "Roboto Slab", serif;
+  background-image: url(../images/bg-banner.png);
+  background-position: center;
+  background-size: cover;
+}
+.projects-main-sec .name-container {
+  margin: 0 50px;
+  color: #FFF3E2;
+}
+.projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+  font-size: 130px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.projects-main-sec .tools-container {
+  max-width: 1100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  border: 1px solid #FFF3E2;
+}
+.projects-main-sec .tools-container .slide {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  max-width: 100px;
+}
+.projects-main-sec .tools-container .figma-slide {
+  background-image: url("../images/techicons/figma.png");
+}
+.projects-main-sec .tools-container .canva-slide {
+  background-image: url("../images/techicons/canva.jpg");
+}
+.projects-main-sec .tools-container .html-slide {
+  background-image: url("../images/techicons/html.png");
+}
+.projects-main-sec .tools-container .css-slide {
+  background-image: url("../images/techicons/css.png");
+}
+.projects-main-sec .tools-container .bootstrap-slide {
+  background-image: url("../images/techicons/bootstrap.jpg");
+}
+.projects-main-sec .tools-container .sass-slide {
+  background-image: url("../images/techicons/sass.png");
+}
+.projects-main-sec .tools-container .js-slide {
+  background-image: url("../images/techicons/js.png");
+}
+.projects-main-sec .tools-container .wp-slide {
+  border-radius: 15px;
+  background-image: url("../images/techicons/wordpress.jpg");
+}
+.projects-main-sec .tools-container .php-slide {
+  background-image: url("../images/techicons/php.png");
+}
+.projects-main-sec .tools-container .golang-slide {
+  background-image: url("../images/techicons/go.png");
+}
+.projects-main-sec .tools-container .photoshop-slide {
+  background-image: url("../images/techicons/photoshop.png");
+}
+.projects-main-sec .tools-container .ai-slide {
+  background-image: url("../images/techicons/ai.png");
+}
+.projects-main-sec .tools-container .pr-slide {
+  background-image: url("../images/techicons/pr.png");
+}
+.projects-main-sec .tools-container .an-slide {
+  background-image: url("../images/techicons/an.png");
+}
+.projects-main-sec .tools-container .github-slide {
+  background-color: #fff;
+  background-image: url("../images/techicons/github.png");
+}
+.projects-main-sec .tools-container .trello-slide {
+  height: 80px;
+  max-width: 200px;
+  background-image: url("../images/techicons/trello.jpg");
+}
+.projects-main-sec .tools-container .sqlite-slide {
+  height: 80px;
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 50px;
+  background-image: url("../images/techicons/sqlite.png");
+}
+
+.title-container {
+  background-color: #0B192C;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.title-container .title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.title-container .title h2 {
+  font-size: 150px;
+}
+.title-container .title:hover {
+  color: #000;
+  cursor: pointer;
+}
+.title-container .title:hover .big-o {
+  background-color: #000;
+}
+.title-container .title .big-o {
+  background-color: #fff;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.title-container:hover {
+  background-color: #FFF3E2;
+  color: #0B192C;
+  -webkit-box-shadow: 2px 2px 2px #fff;
+          box-shadow: 2px 2px 2px #fff;
+  cursor: pointer;
+}
+.title-container:hover .big-o {
+  background-color: #0B192C;
+}
+
+.contact-sec {
+  padding: 200px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.contact-sec a {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.contact-sec a:hover {
+  color: #F3C623;
+}
+.contact-sec .contact-big-o {
+  display: none;
+  background-color: #fff;
+  border-radius: 100px;
+  width: auto;
+  height: 100px;
+}
+.contact-sec .contact-big-o .link-div {
+  padding: 10px 0;
+}
+.contact-sec .contact .form-container {
+  display: none;
+  margin-top: 70px;
+}
+.contact-sec .contact .form-container form {
+  padding: 50px 100px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #fff;
+  color: #000;
+}
+.contact-sec .contact .form-container form label {
+  font-weight: 600;
+}
+
+footer {
+  padding-bottom: 80px;
+  background: url(https://i.pinimg.com/originals/7f/e7/74/7fe774bbacce09f00cb5b2e3cbc48db3.png);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+footer .container {
+  max-width: 1300px;
+}
+footer .footer-parent {
+  padding-top: 50px;
+  border-top: 2px solid #FFF;
+  border-radius: 50px;
+}
+footer .contact a:hover {
+  color: #F3C623;
+  border-bottom: 1px solid #F3C623;
+}
+footer .contact ul a:hover {
+  border: 0;
+}
+footer .contact ul i {
+  font-size: 35px;
+  color: #fff;
+}
+footer .contact ul i:hover {
+  color: #F3C623;
+}
+footer h5 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #F3C623;
+}
+footer h6 {
+  margin-left: 30px;
+  color: #F3C623;
+}
+footer img {
+  height: 50px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul a:hover {
+  color: #F3C623;
+  border-bottom: 1px solid #F3C623;
+}
+footer ul li {
+  margin: 20px 0;
+}
+footer .copyright {
+  padding-top: 80px;
+}
+footer .copyright h6 {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1250px) {
+  section {
+    padding: 100px 0;
+  }
+  .projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+    font-size: 100px;
+  }
+  .projects-main-sec .tools-container {
+    max-width: 900px;
+  }
+  .title-container .title h2 {
+    font-size: 140px;
+  }
+  .contact-sec a {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .header-parent {
+    height: 60px;
+  }
+  .projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+    font-size: 75px;
+    font-weight: 700;
+  }
+  .projects-main-sec .tools-container {
+    max-width: 700px;
+  }
+  .projects-main-sec .tools-container .slide {
+    height: 75px;
+    max-width: 75px;
+  }
+  .projects-main-sec .tools-container .trello-slide {
+    height: 60px;
+    max-width: 120px;
+  }
+  .projects-main-sec .tools-container .sqlite-slide {
+    height: 60px;
+    max-width: 120px;
+  }
+  .title-container .title h2 {
+    font-size: 110px;
+  }
+  .title-container .title .big-o {
+    border-radius: 80px;
+    max-width: 80px;
+    height: 80px;
+  }
+  .contact-sec a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contact-sec .contact-big-o {
+    border-radius: 80px;
+    height: 80px;
+  }
+  .contact-sec .contact .form-container {
+    margin-top: 50px;
+  }
+  .contact-sec .contact .form-container form {
+    padding: 50px;
+    margin: 0 auto;
+  }
+  footer {
+    padding-bottom: 80px;
+  }
+  footer h5 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+  .projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+    font-size: 50px;
+  }
+  .projects-main-sec .tools-container {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    max-width: 100%;
+  }
+  .projects-main-sec .tools-container .slide {
+    height: 40px;
+    max-width: 40px;
+  }
+  .projects-main-sec .tools-container .trello-slide {
+    height: 40px;
+    max-width: 90px;
+  }
+  .projects-main-sec .tools-container .sqlite-slide {
+    height: 40px;
+    max-width: 90px;
+  }
+  .title-container .title h2 {
+    font-size: 90px;
+  }
+  .title-container .title .big-o {
+    border-radius: 60px;
+    max-width: 60px;
+    height: 60px;
+  }
+  .contact-sec a {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .contact-sec .contact-big-o {
+    border-radius: 55px;
+    height: 55px;
+  }
+  .contact-sec .contact .form-container {
+    margin-top: 30px;
+  }
+  footer h5 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .header-parent .menu {
+    display: none;
+  }
+  header .header-parent .burger-btn {
+    display: block;
+  }
+  .projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+    font-size: 40px;
+  }
+  .title-container .title h2 {
+    font-size: 70px;
+  }
+  .title-container .title .big-o {
+    border-radius: 50px;
+    max-width: 50px;
+    height: 50px;
+  }
+  .contact-sec a {
+    font-size: 40px;
+  }
+  .contact-sec a span {
+    display: none;
+  }
+  .contact-sec .contact-big-o {
+    border-radius: 45px;
+    height: 45px;
+  }
+  .contact-sec .contact-big-o .link-div {
+    padding: 0;
+    margin-top: -8px;
+  }
+  .contact-sec .contact .form-container {
+    margin-top: 20px;
+  }
+  footer {
+    padding-bottom: 80px;
+  }
+  footer .footer-parent {
+    gap: 10px;
+  }
+  footer .footer-parent .contact {
+    width: 100%;
+  }
+  footer .footer-parent .map {
+    width: 100%;
+  }
+  footer .footer-parent .email {
+    width: 100%;
+  }
+  footer .footer-parent .email button {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 30px 0;
+  }
+  .projects-main-sec .name-container h1, .projects-main-sec .name-container h2 {
+    font-size: 28px;
+  }
+  .title-container .title h2 {
+    font-size: 60px;
+  }
+  .title-container .title .big-o {
+    border-radius: 40px;
+    max-width: 40px;
+    height: 40px;
+  }
+  .contact-sec a {
+    font-size: 30px;
+  }
+  .contact-sec .contact-big-o {
+    border-radius: 35px;
+    height: 35px;
+  }
+  .contact-sec .contact .form-container {
+    margin-top: 0px;
+  }
+}
