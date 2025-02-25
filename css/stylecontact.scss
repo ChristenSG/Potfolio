@@ -262,6 +262,7 @@ header{
 		}
 
 		.big-o{
+			display: none;
 			background-color: #fff;
 			border-radius: 100px;
 			width: 100px;
@@ -297,7 +298,7 @@ header{
 	}
 
 	.contact-big-o{
-		display: none;
+		// display: none;
 		background-color: #fff;
 		border-radius: 100px;
 		width: auto;
@@ -311,7 +312,7 @@ header{
 	.contact{
 
 		.form-container{
-			display: none;
+			// display: none;
 			margin-top: 70px;
 			form{
 				padding: 50px 100px;

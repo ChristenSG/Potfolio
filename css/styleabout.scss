@@ -296,6 +296,10 @@ header{
 		color: $text-hover-color;
 	}
 
+	button{
+		margin-top: 100px;
+	}
+
 	.about-big-o{
 		display: none;
 		margin: 30px 0;
@@ -311,6 +315,124 @@ header{
 			font-weight: 500;
 			padding: 50px;
 			text-transform: none;
+		}
+	}	
+
+	.cv-btn{
+		padding: 30px;
+		border-radius: 30px;
+		i{
+			font-size: 50px;
+			color: #0B192C;
+		}
+
+		h2{
+			color: #0B192C;
+			font-size: 30px;
+		}
+	}
+}
+// ----------------------------------------------------
+
+// About Popup Section---------------------------------
+.about-popup-sec{
+	padding: 0;
+	.about-popup{
+		height: 100vh;
+		width: 100vw;
+		background-color: #0B192C;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		display: none;
+
+		img{
+			height: auto;
+			max-width: auto;
+		}
+
+		.about-popup-content{
+			margin-left: auto;
+			margin-right: auto;
+
+			.popup-title{
+				max-width: 100%;
+				background-color: #1E3E62;
+			}
+
+			padding: 50px;
+			width: 60%;
+			height: 80%;
+			overflow-y: scroll;
+			top: 50%;
+			left: 50%;
+			background-color: #fff;
+			transform: translate(-50%, -50%);
+
+			.cv-content{
+				font-family: "Anta", sans-serif;
+
+				h2{
+					color: #00224D;
+					text-transform: uppercase;
+					margin-top: 20px;
+					margin-bottom: 20px;
+					text-shadow: 
+					px 1px #00224D;
+				}
+
+				h4{
+					font-weight: 300;
+					font-size: 25px;
+				}
+
+				ul{
+					line-height: 1.5;
+					margin-left: 20px;
+					margin-bottom: 20px;
+				}
+
+				p{
+					margin-bottom: 20px;
+				}
+
+				/*Data Section------------------------------*/
+				.parent{
+					display: flex;
+					gap: 100px;
+
+					.child1{
+						width: 30%;
+						padding: 50px 30px;
+						background-color: #00224D;
+						text-align: center;
+
+						.child1-img{
+							background: url("../images/AvatarMaker.png");
+							background-size: cover;
+							background-position: center;
+							border: 2px solid #fff;
+							height: 300px;
+							border-radius: 70px;
+							box-shadow: 3px 3px #fff;
+						}
+
+						.child1-info{
+							padding: 40px 0;
+							text-align: center;
+							color: #fff;
+						}
+					}
+
+					.child2{
+						width: 70%;
+						padding: 50px 0;
+						color: #000;
+						text-align: left;
+					}
+				}
+				/*------------------------------------------*/
+			}
 		}
 	}
 }
@@ -426,9 +548,24 @@ section{
 
 // About Section---------------------------------------
 .about-sec{
-		.about-text{
-			font-size: 18px;
-			padding: 55px 20px;
+	.about-text{
+		font-size: 18px;
+		padding: 55px 20px;
+	}
+}
+
+// About Popup Section---------------------------------
+.about-popup-sec{
+	.about-popup{
+
+		.about-popup-content{
+			.cv-content{
+				/*Data Section----------------------*/
+				.parent{
+					gap: 50px;
+				}
+				/*-----------------------------------*/
+			}
 		}
 	}
 }
@@ -490,6 +627,54 @@ header{
 		}
 	}
 }
+
+// About Popup Section---------------------------------
+.about-popup-sec{
+	.about-popup{
+
+		.about-popup-content{
+
+			padding: 30px;
+			width: 80%;
+			height: 80%;
+
+			.cv-content{
+
+				h2{
+					font-size: 20px;
+				}
+
+				h4{
+					font-size: 18px;
+				}
+
+				/*Data Section------------------------------*/
+				.parent{
+					flex-direction: column;
+					gap: 50px;
+
+					.child1{
+						width: 100%;
+						padding: 50px 30px;
+
+						.child1-img{
+							margin: 0 auto;
+							height: 300px;
+							width: 200px;
+						}
+					}
+
+					.child2{
+						width: 100%;
+						padding: 50px 0;
+					}
+				}
+				/*------------------------------------------*/
+			}
+		}
+	}
+}
+// ----------------------------------------------------
 
 // Footer----------------------------------------------
 footer{
@@ -686,7 +871,7 @@ section{
 .about-sec{
 	.about-big-o{
 		border-radius: 200px;
-		width: 400px;
+		width: 700px;
 	}
 
 	.about-text{

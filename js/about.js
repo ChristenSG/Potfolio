@@ -17,3 +17,22 @@ function showAboutFun(){
 	}
 }
 // -----------------------------------------------------------
+
+// About Popup------------------------------------------------
+const aboutPopup = document.getElementById('about-popup');
+const aboutPopupBtn = document.getElementById('about-popup-btn');
+
+aboutPopupBtn.addEventListener('click', showAboutPopupFunc);
+
+function showAboutPopupFunc(){
+	aboutPopup.style.display = "block";
+	body.style.overflowY = "hidden";
+}
+
+aboutPopup.addEventListener('click', function(event){
+	if (event.target === aboutPopup){
+		aboutPopup.style.display = "none";
+		body.style.overflowY = "visible";
+	}
+});
+// -----------------------------------------------------------

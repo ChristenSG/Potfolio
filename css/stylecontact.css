@@ -212,6 +212,7 @@ header .burger-menu hr {
   background-color: #000;
 }
 .title-container .title .big-o {
+  display: none;
   background-color: #fff;
   border-radius: 100px;
   width: 100px;
@@ -243,7 +244,6 @@ header .burger-menu hr {
   color: #F3C623;
 }
 .contact-sec .contact-big-o {
-  display: none;
   background-color: #fff;
   border-radius: 100px;
   width: auto;
@@ -253,7 +253,6 @@ header .burger-menu hr {
   padding: 10px 0;
 }
 .contact-sec .contact .form-container {
-  display: none;
   margin-top: 70px;
 }
 .contact-sec .contact .form-container form {

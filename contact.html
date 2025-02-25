@@ -53,6 +53,10 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 	<!-- ----------------------------------------------- -->
 
+	<!-- EmailJS CDN------------------------------------ -->
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<!-- ----------------------------------------------- -->
+
 	<script type="text/javascript" src="js/main.js" defer></script>
 	<script type="text/javascript" src="js/contact.js" defer></script>
 </head>
@@ -165,32 +169,33 @@
 			<div class="container">
 
 				<div class="form-container py-5" id="form-container">
-					<form class="border rounded-5">
+					<div class="fs-2 text-center pb-5" id="formResponse"></div>
+					<form class="contact-form border rounded-5" id="contact-form" method="POST" action="https://formspree.io/f/mjkgwnag">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Full Name:</label>
 							  
-							<input type="Text" class="form-control" id="exampleFormControlInput1" placeholder="">
+							<input type="Text" class="form-control" name="name" placeholder="">
 						</div>
 
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Email address:</label>
 							  
-							<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+							<input type="email" class="form-control" name="email" placeholder="name@example.com">
 						</div>
 
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Subject:</label>
 							  
-							<input type="Text" class="form-control" id="exampleFormControlInput3" placeholder="">
+							<input type="Text" class="form-control" name="subject" placeholder="">
 						</div>
 
 						<div class="mb-3">
 							<label for="exampleFormControlTextarea1" class="form-label">Question/Comments:</label>
 							  
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<textarea class="form-control" name="message" rows="3"></textarea>
 						</div>
 
-						<button class="btn btn-warning">Submit</button>
+						<button class="btn btn-warning" type="submit">Submit</button>
 					</form>
 				</div>
 			</div>

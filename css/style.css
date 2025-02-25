@@ -321,7 +321,8 @@ header .burger-menu hr {
   height: 300px;
 }
 .about-sec .about-box .img2 {
-  background-image: url("../images/frontend-img.jpg");
+  background-color: #fff;
+  background-image: url(https://www.codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;

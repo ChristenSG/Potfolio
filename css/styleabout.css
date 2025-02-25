@@ -242,6 +242,9 @@ header .burger-menu hr {
 .about-sec a:hover {
   color: #F3C623;
 }
+.about-sec button {
+  margin-top: 100px;
+}
 .about-sec .about-big-o {
   display: none;
   margin: 30px 0;
@@ -257,6 +260,109 @@ header .burger-menu hr {
   font-weight: 500;
   padding: 50px;
   text-transform: none;
+}
+.about-sec .cv-btn {
+  padding: 30px;
+  border-radius: 30px;
+}
+.about-sec .cv-btn i {
+  font-size: 50px;
+  color: #0B192C;
+}
+.about-sec .cv-btn h2 {
+  color: #0B192C;
+  font-size: 30px;
+}
+
+.about-popup-sec {
+  padding: 0;
+}
+.about-popup-sec .about-popup {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0B192C;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+.about-popup-sec .about-popup img {
+  height: auto;
+  max-width: auto;
+}
+.about-popup-sec .about-popup .about-popup-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 60%;
+  height: 80%;
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.about-popup-sec .about-popup .about-popup-content .popup-title {
+  max-width: 100%;
+  background-color: #1E3E62;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content {
+  font-family: "Anta", sans-serif;
+  /*Data Section------------------------------*/
+  /*------------------------------------------*/
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content h2 {
+  color: #00224D;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: px 1px #00224D;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content h4 {
+  font-weight: 300;
+  font-size: 25px;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content ul {
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content p {
+  margin-bottom: 20px;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content .parent .child1 {
+  width: 30%;
+  padding: 50px 30px;
+  background-color: #00224D;
+  text-align: center;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content .parent .child1 .child1-img {
+  background: url("../images/AvatarMaker.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  height: 300px;
+  border-radius: 70px;
+  -webkit-box-shadow: 3px 3px #fff;
+          box-shadow: 3px 3px #fff;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content .parent .child1 .child1-info {
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}
+.about-popup-sec .about-popup .about-popup-content .cv-content .parent .child2 {
+  width: 70%;
+  padding: 50px 0;
+  color: #000;
+  text-align: left;
 }
 
 footer {
@@ -331,14 +437,16 @@ footer .copyright h6 {
   .title-container .title h2 {
     font-size: 140px;
   }
-  .about-sec .about-big-o {
-    border-radius: 500px;
-    width: 900px;
-    height: auto;
+  .about-sec .about-text {
+    font-size: 18px;
+    padding: 55px 20px;
   }
-  .about-sec .about-big-o .about-text {
-    font-size: 17px;
-    padding: 50px 20px;
+  .about-popup-sec .about-popup .about-popup-content .cv-content {
+    /*Data Section----------------------*/
+    /*-----------------------------------*/
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content .parent {
+    gap: 50px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -372,14 +480,40 @@ footer .copyright h6 {
     max-width: 80px;
     height: 80px;
   }
-  .about-sec .about-big-o {
-    border-radius: 500px;
-    width: 900px;
-    height: auto;
+  .about-popup-sec .about-popup .about-popup-content {
+    padding: 30px;
+    width: 80%;
+    height: 80%;
   }
-  .about-sec .about-big-o .about-text {
-    font-size: 17px;
-    padding: 50px 20px;
+  .about-popup-sec .about-popup .about-popup-content .cv-content {
+    /*Data Section------------------------------*/
+    /*------------------------------------------*/
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content h2 {
+    font-size: 20px;
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content h4 {
+    font-size: 18px;
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content .parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content .parent .child1 {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content .parent .child1 .child1-img {
+    margin: 0 auto;
+    height: 300px;
+    width: 200px;
+  }
+  .about-popup-sec .about-popup .about-popup-content .cv-content .parent .child2 {
+    width: 100%;
+    padding: 50px 0;
   }
   footer {
     padding-bottom: 80px;
@@ -478,11 +612,18 @@ footer .copyright h6 {
     font-size: 28px;
   }
   .title-container .title h2 {
-    font-size: 60px;
+    font-size: 55px;
   }
   .title-container .title .big-o {
     border-radius: 40px;
     max-width: 40px;
     height: 40px;
+  }
+  .about-sec .about-big-o {
+    border-radius: 200px;
+    width: 700px;
+  }
+  .about-sec .about-text {
+    padding: 33px 15px;
   }
 }
