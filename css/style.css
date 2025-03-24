@@ -322,7 +322,7 @@ header .burger-menu hr {
 }
 .about-sec .about-box .img2 {
   background-color: #fff;
-  background-image: url(https://www.codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg);
+  background-image: url(https://bootcamprankings.com/wp-content/uploads/2021/01/How-to-Learn-Web-Development-768x763.png);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -696,5 +696,24 @@ footer .copyright h6 {
   }
   .main-sec .name-box .name h3 {
     font-size: 20px;
+  }
+  .about-sec .about-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-sec .about-box .about-text {
+    margin-top: 130px;
+    width: 100%;
+    text-align: center;
+  }
+  .about-sec .about-box .about-img {
+    width: 60%;
+    background-position: center;
+  }
+  .about-sec .about-box .img2 {
+    left: 30%;
+    top: 25%;
   }
 }

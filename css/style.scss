@@ -910,5 +910,29 @@ footer{
 	}
 }
 // ----------------------------------------------------
+
+// About Section---------------------------------------
+.about-sec{
+	.about-box{
+		flex-direction: column-reverse;
+
+		.about-text{
+			margin-top: 130px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.about-img{
+			width: 60%;
+			background-position: center;
+		}
+
+		.img2{
+			left: 30%;
+			top: 25%;
+		}	
+	}
+}
+// ----------------------------------------------------
 }
 // ----------------------------------------------------
